@@ -18,7 +18,7 @@ namespace RSSFeedReader.Model
             SyndicationClient syndicationClient = new SyndicationClient();
             var feeds = await syndicationClient.RetrieveFeedAsync(new Uri("http://golem.de.dynamic.feedsportal.com/pf/578068/http://rss.golem.de/rss.php?feed=RSS2.0"));
 
-            //return feeds.Items;
+            return feeds.Items;
         }
     }
 }
