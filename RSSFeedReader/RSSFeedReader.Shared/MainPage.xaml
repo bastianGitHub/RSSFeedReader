@@ -24,13 +24,30 @@
         <ViewModels:MainPageViewModel/>
     </Page.DataContext>
 
-	<Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-		<Grid.RowDefinitions>
-			<RowDefinition Height="90"/>
-			<RowDefinition Height="*"/>
-		</Grid.RowDefinitions>
-		<TextBlock Margin="20" Text="RSS Feed Reader" FontSize="56"/>
-		<GridView Margin="20,0,20,20" Grid.Row="1" ItemsSource="{Binding News}" ItemTemplate="{StaticResource NachrichtenDataTemplate}"/>
-
-	</Grid>
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Hub x:Name="Hub" x:Uid="Hub" Header="RSS Feed Reader">
+            <HubSection x:Uid="hubSectionNachrichten" Header="Nachrichten" >
+                <DataTemplate>
+                    <Grid>
+                        <GridView x:Name="itemGriedView" 
+                                  Margin="20,0,20,20" 
+                                  Width="800" Grid.Row="1" 
+                                  ItemsSource="{Binding News}" 
+                                  ItemTemplate="{StaticResource NachrichtenDataTemplate}"
+                                  AutomationProperties.AutomationId="ItemGridView"
+                                  AutomationProperties.Name="Items In Group"
+                                  SelectionMode="None"
+                                  IsSwipeEnabled="False"
+                                  IsItemClickEnabled="True"
+                                  ItemClick="itemGriedView_ItemClick"
+                                  />
+                    </Grid>
+                </DataTemplate>
+            </HubSection>
+            <HubSection x:Uid="hubSectionTags" Header="Tags">
+                
+            </HubSection>
+            
+        </Hub>
+    </Grid>
 </Page>

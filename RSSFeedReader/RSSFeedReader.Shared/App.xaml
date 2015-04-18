@@ -5,7 +5,8 @@
     xmlns:local="using:RSSFeedReader"
     xmlns:viewModels="using:RSSFeedReader.ViewModels">
     <Application.Resources>
-        <viewModels:MainPageViewModel x:Key="MainPageViewModel" />
+        <viewModels:MainPageViewModel x:Key="MainPageViewModel"/>
+        <viewModels:FeedViewViewModel x:Key="FeedViewViewModel"/>
         <DataTemplate x:Key="NewsDataTemplate">
             <Grid Width="250" Height="200" Margin="10" Background="Orange">
                 <Grid.RowDefinitions>
@@ -28,5 +29,4 @@
             </Grid>
         </DataTemplate>
     </Application.Resources>
-
 </Application>

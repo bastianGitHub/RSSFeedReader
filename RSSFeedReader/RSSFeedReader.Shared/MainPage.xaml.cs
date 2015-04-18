@@ -12,6 +12,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Windows.Web.Syndication;
 
 // Die Elementvorlage "Leere Seite" ist unter http://go.microsoft.com/fwlink/?LinkId=234238 dokumentiert.
 
@@ -43,6 +44,14 @@ namespace RSSFeedReader
             // Windows.Phone.UI.Input.HardwareButtons.BackPressed-Ereignis registrieren.
             // Wenn Sie den NavigationHelper verwenden, der bei einigen Vorlagen zur Verfügung steht,
             // wird dieses Ereignis für Sie behandelt.
+        }
+
+        private void itemGriedView_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            // Zur entsprechenden Zielseite navigieren und die neue Seite konfigurieren,
+            // indem die erforderlichen Informationen als Navigationsparameter übergeben werden
+            var itemId = ((SyndicationItem)e.ClickedItem).ItemUri;
+            this.Frame.Navigate(typeof(FeedView), itemId);
         }
     }
 }

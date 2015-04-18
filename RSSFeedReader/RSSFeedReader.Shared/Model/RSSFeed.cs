@@ -11,8 +11,6 @@ namespace RSSFeedReader.Model
         public string strFeedName { get; set; }
         public Uri UriFeedIdentifier { get; set; }
 
-
-
         public async Task<IList<SyndicationItem>> LoadNewsAsync()
         {
             SyndicationClient syndicationClient = new SyndicationClient();
