@@ -8,6 +8,12 @@ namespace RSSFeedReader.Model
 {
     public class RSSFeed
     {
+        //public RSSFeed(string _strfeedName, Uri _urifeedIdentifier)
+        //{ 
+        //    this.strFeedName = _strfeedName;
+        //    this.UriFeedIdentifier = _urifeedIdentifier;
+        //}
+
         public string strFeedName { get; set; }
         public Uri UriFeedIdentifier { get; set; }
 
