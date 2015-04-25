@@ -50,7 +50,7 @@ namespace RSSFeedReader.View
         {
             // Zur entsprechenden Zielseite navigieren und die neue Seite konfigurieren,
             // indem die erforderlichen Informationen als Navigationsparameter übergeben werden
-            var itemId = ((SyndicationItem)e.ClickedItem).ItemUri;
+            var itemId = ((SyndicationItem)e.ClickedItem);
             this.Frame.Navigate(typeof(FeedView), itemId);
         }
     }
