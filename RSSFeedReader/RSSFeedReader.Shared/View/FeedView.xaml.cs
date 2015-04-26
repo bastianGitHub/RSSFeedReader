@@ -82,7 +82,6 @@ namespace RSSFeedReader.View
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             this.navigationHelper.OnNavigatedTo(e);
-            //SyndicationItem mySyndicationItem = e.Parameter as SyndicationItem;
         }
 
         protected override void OnNavigatedFrom(NavigationEventArgs e)
@@ -91,13 +90,5 @@ namespace RSSFeedReader.View
         }
 
         #endregion
-
-        private void backButton_Tapped(object sender, TappedRoutedEventArgs e)
-        {
-            if (Frame.CanGoBack)
-                Frame.GoBack();
-            else
-                Frame.Navigate(typeof(MainPage));
-        }
     }
 }
