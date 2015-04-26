@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Practices.Prism.StoreApps;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -26,8 +27,6 @@ namespace RSSFeedReader.View
         public MainPage()
         {
             this.InitializeComponent();
-
-            this.NavigationCacheMode = NavigationCacheMode.Required;
         }
 
         /// <summary>
