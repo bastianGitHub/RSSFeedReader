@@ -17,7 +17,7 @@ using Windows.UI.Xaml.Media.Animation;
 using Windows.UI.Xaml.Navigation;
 using System.Threading.Tasks;
 
-using RSSFeedReader.View;
+using RSSFeedReader.Views;
 using Microsoft.Practices.Prism.Mvvm;
 
 // Die Vorlage "Leere Anwendung" ist unter http://go.microsoft.com/fwlink/?LinkId=234227 dokumentiert.
@@ -36,7 +36,7 @@ namespace RSSFeedReader
 
         protected override Task OnLaunchApplicationAsync(LaunchActivatedEventArgs args)
         {
-            NavigationService.Navigate("MainPage", null);
+            NavigationService.Navigate("Main", null);
             return Task.FromResult<object>(null);
         }
     }

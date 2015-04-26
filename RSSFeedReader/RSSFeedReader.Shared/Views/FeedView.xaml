@@ -6,7 +6,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:ViewModels="using:RSSFeedReader.ViewModels" 
     x:Name="page"
-    x:Class="RSSFeedReader.View.FeedView"
+    x:Class="RSSFeedReader.Views.FeedView"
     
     mc:Ignorable="d">
 

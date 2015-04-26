@@ -11,6 +11,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RSSFeedReader.Windows", "RS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RSSFeedReader.WindowsPhone", "RSSFeedReader\RSSFeedReader.WindowsPhone\RSSFeedReader.WindowsPhone.csproj", "{052DF988-337A-4582-BF73-676622ADF9B7}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{1188A4BF-8B0D-4C31-8909-0A600111E179}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		RSSFeedReader\RSSFeedReader.Shared\RSSFeedReader.Shared.projitems*{31765f76-5610-4aa7-97a2-cc7f337e24c5}*SharedItemsImports = 13

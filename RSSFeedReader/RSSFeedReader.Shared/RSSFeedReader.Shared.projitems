@@ -22,19 +22,19 @@
     <Compile Include="$(MSBuildThisFileDirectory)Model\RSSFeed.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\FeedViewViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\MainPageViewModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)View\FeedView.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Views\FeedView.xaml.cs">
       <DependentUpon>FeedView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)View\MainPage.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Views\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Page Include="$(MSBuildThisFileDirectory)View\FeedView.xaml">
+    <Page Include="$(MSBuildThisFileDirectory)Views\FeedView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="$(MSBuildThisFileDirectory)View\MainPage.xaml">
+    <Page Include="$(MSBuildThisFileDirectory)Views\MainPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

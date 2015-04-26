@@ -6,7 +6,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:ViewModels="using:RSSFeedReader.ViewModels"
     xmlns:Interactivity="using:Microsoft.Xaml.Interactivity" xmlns:Core="using:Microsoft.Xaml.Interactions.Core"
-    x:Class="RSSFeedReader.View.MainPage"
+    x:Class="RSSFeedReader.Views.MainPage"
     mc:Ignorable="d">
     <Page.BottomAppBar>
         <CommandBar>
