@@ -36,7 +36,7 @@ namespace RSSFeedReader
 
         protected override Task OnLaunchApplicationAsync(LaunchActivatedEventArgs args)
         {
-            NavigationService.Navigate("Main", null);
+            NavigationService.Navigate("FeedView", null);
             return Task.FromResult<object>(null);
         }
     }

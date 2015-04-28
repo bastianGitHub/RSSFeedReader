@@ -1,4 +1,6 @@
-﻿using RSSFeedReader.Model;
+﻿using Microsoft.Practices.Prism.Mvvm;
+using Microsoft.Practices.Prism.Mvvm.Interfaces;
+using RSSFeedReader.Model;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -7,7 +9,7 @@ using Windows.Web.Syndication;
 
 namespace RSSFeedReader.ViewModels
 {
-    public class FeedViewViewModel
+    public class NewsViewPageViewModel: BindableBase
     {
         public SyndicationItem FeedNews { get; set; }
 
@@ -16,8 +18,5 @@ namespace RSSFeedReader.ViewModels
         //public string feedAuthor { get; set; }
         //public string feedText { get; set; }
 
-        public FeedViewViewModel()
-        {
-        }
     }
 }

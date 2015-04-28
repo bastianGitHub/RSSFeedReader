@@ -7,8 +7,8 @@
     xmlns:storeApps="using:Microsoft.Practices.Prism.Mvvm"
     >
     <Application.Resources>
-        <viewModels:MainPageViewModel x:Key="MainPageViewModel"/>
-        <viewModels:FeedViewViewModel x:Key="FeedViewViewModel"/>
+        <viewModels:FeedViewPageViewModel x:Key="FeedViewPageViewModel"/>
+        <viewModels:NewsViewPageViewModel x:Key="NewsViewPageViewModel"/>
         <DataTemplate x:Key="NewsDataTemplate">
             <Grid Width="250" Height="200" Margin="10" Background="Orange">
                 <Grid.RowDefinitions>

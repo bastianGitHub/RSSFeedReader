@@ -20,17 +20,24 @@
     <Compile Include="$(MSBuildThisFileDirectory)Common\RelayCommand.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Common\SuspensionManager.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\RSSFeed.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\FeedViewViewModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\MainPageViewModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Views\FeedView.xaml.cs">
-      <DependentUpon>FeedView.xaml</DependentUpon>
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\NewsViewPageViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\FeedViewPageViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\NewsViewPage.xaml.cs">
+      <DependentUpon>NewsViewPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\FeedViewPage.xaml.cs">
+      <DependentUpon>FeedViewPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Views\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Page Include="$(MSBuildThisFileDirectory)Views\FeedView.xaml">
+    <Page Include="$(MSBuildThisFileDirectory)Views\NewsViewPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Views\FeedViewPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

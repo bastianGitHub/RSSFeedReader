@@ -1,16 +1,17 @@
-﻿<Page
+﻿<storeApp:VisualStateAwarePage
+    x:Class="RSSFeedReader.Views.NewsViewPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:prism="using:Microsoft.Practices.Prism.Mvvm"
+    xmlns:storeApp="using:Microsoft.Practices.Prism.StoreApps"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:RSSFeedReader"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:ViewModels="using:RSSFeedReader.ViewModels" 
-    x:Name="page"
-    x:Class="RSSFeedReader.Views.FeedView"
-    
-    mc:Ignorable="d">
+    prism:ViewModelLocator.AutoWireViewModel="True"
+    mc:Ignorable="d"
+    >
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" DataContext="{Binding Source={StaticResource MainPageViewModel}}">
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" DataContext="{Binding Source={StaticResource FeedViewPageViewModel}}">
         <Grid.RowDefinitions>
             <RowDefinition Height="140"/>
             <RowDefinition Height="35"/>
@@ -68,4 +69,4 @@
             <TextBlock x:Name="tblContent" Margin="40" TextWrapping="Wrap" Text="TextBlock" DataContext="{Binding FeedNews.Content.Text}"/>
         </Grid>
     </Grid>
-</Page>
+</storeApp:VisualStateAwarePage>
